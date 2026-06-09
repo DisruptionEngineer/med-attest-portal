@@ -14,14 +14,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Subterra — Webhooks in. Reports out.",
+  title: "med-attest — A HIPAA consent story for your AI tool",
   description:
-    "Turn webhook events from any source into branded, scheduled PDF reports. The reporting infrastructure you never have to think about.",
+    "Touchless self-serve signup for the med-attest consent broker. Pilot research preview.",
   openGraph: {
-    title: "Subterra — Webhooks in. Reports out.",
+    title: "med-attest — A HIPAA consent story for your AI tool",
     description:
-      "Turn webhook events from any source into branded, scheduled PDF reports.",
-    siteName: "Subterra",
+      "Touchless self-serve signup for the med-attest consent broker.",
+    siteName: "med-attest",
   },
 };
 
