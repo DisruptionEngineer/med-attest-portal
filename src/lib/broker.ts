@@ -70,11 +70,11 @@ export async function registerPartnerOnBroker(
       `broker /admin/v1/allowed-dids failed: ${res.status} ${body}`,
     );
   }
-  const body = (await res.json()) as { id?: string };
-  if (!body.id) {
-    throw new BrokerAdminError(500, `broker response missing id field: ${JSON.stringify(body)}`);
+  const body = (await res.json()) as { did?: string };
+  if (!body.did) {
+    throw new BrokerAdminError(500, `broker response missing did field: ${JSON.stringify(body)}`);
   }
-  return { allowlistId: body.id };
+  return { allowlistId: body.did };
 }
 
 export async function revokePartnerOnBroker(args: RevokePartnerArgs): Promise<void> {
